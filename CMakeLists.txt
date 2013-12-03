@@ -9,7 +9,7 @@ add_subdirectory(src)
 option(test "Build and run tests" OFF)
 
 if (test)
-    add_subdirectory(vendor)
+    add_subdirectory(external)
     add_subdirectory(test)
     enable_testing()
     add_test(NAME test_mongo COMMAND test_mongo)
