@@ -5,7 +5,7 @@
 # Setup the build dir and makefile
 mkdir build
 cd build
-cmake ..
+cmake -Dtest=ON ..
 
 # Make some things
 make
