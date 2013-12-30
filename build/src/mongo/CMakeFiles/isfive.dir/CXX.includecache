@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tbrock/Code/mongo-cpp-driver/src/mongo/isfive.cpp
+isfive.h
+/Users/tbrock/Code/mongo-cpp-driver/src/mongo/isfive.h
+
+/Users/tbrock/Code/mongo-cpp-driver/src/mongo/isfive.h
+

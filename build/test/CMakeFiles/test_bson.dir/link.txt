@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/test_bson.dir/bson/test_bson.cpp.o  -o test_bson  -L/Users/tbrock/Code/mongo-cpp-driver/src  ../external/gtest-1.7.0/libgtest.a ../external/gtest-1.7.0/libgtest_main.a ../src/bson/libbson.a ../external/gtest-1.7.0/libgtest.a -Wl,-rpath,/Users/tbrock/Code/mongo-cpp-driver/src 
