@@ -6,9 +6,9 @@
 namespace bson {
 
 class Document : public Element {
-	private:
-		unordered_map<std::string, Element> value;
-	public:
+    private:
+        unordered_map<std::string, Element> value;
+    public:
 
 };
 

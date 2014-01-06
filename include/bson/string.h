@@ -6,8 +6,8 @@
 namespace bson {
 
 class String : public Element {
-	public:
-		static const char type = 0x02;
+    public:
+        static const char type = 0x02;
 };
 
 }
