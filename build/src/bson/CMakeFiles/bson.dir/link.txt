@@ -1,2 +1,0 @@
-/usr/bin/ar cr libbson.a  CMakeFiles/bson.dir/number_int.cpp.o
-/usr/bin/ranlib libbson.a

@@ -1,2 +1,0 @@
-/usr/bin/ar cr libisfive.a  CMakeFiles/isfive.dir/isfive.cpp.o
-/usr/bin/ranlib libisfive.a

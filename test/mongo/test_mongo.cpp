@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "isfive.h"
+#include "mongo/isfive.h"
 
 TEST(IsFiveTest, Five)
 {

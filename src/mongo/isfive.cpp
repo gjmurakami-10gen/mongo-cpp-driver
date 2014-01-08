@@ -1,4 +1,4 @@
-#include "isfive.h"
+#include "mongo/isfive.h"
 
 bool isfive(int n)
 {

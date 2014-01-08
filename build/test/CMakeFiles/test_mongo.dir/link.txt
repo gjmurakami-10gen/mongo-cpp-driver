@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/test_mongo.dir/mongo/test_mongo.cpp.o  -o test_mongo  -L/Users/tbrock/Code/mongo-cpp-driver/src  ../external/gtest-1.7.0/libgtest.a ../external/gtest-1.7.0/libgtest_main.a ../src/mongo/libisfive.a ../external/gtest-1.7.0/libgtest.a -Wl,-rpath,/Users/tbrock/Code/mongo-cpp-driver/src 

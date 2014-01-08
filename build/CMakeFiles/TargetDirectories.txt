@@ -1,6 +1,0 @@
-/Users/tbrock/Code/mongo-cpp-driver/build/src/bson/CMakeFiles/bson.dir
-/Users/tbrock/Code/mongo-cpp-driver/build/external/gtest-1.7.0/CMakeFiles/gtest.dir
-/Users/tbrock/Code/mongo-cpp-driver/build/external/gtest-1.7.0/CMakeFiles/gtest_main.dir
-/Users/tbrock/Code/mongo-cpp-driver/build/src/mongo/CMakeFiles/isfive.dir
-/Users/tbrock/Code/mongo-cpp-driver/build/test/CMakeFiles/test_bson.dir
-/Users/tbrock/Code/mongo-cpp-driver/build/test/CMakeFiles/test_mongo.dir
