@@ -8,14 +8,14 @@ add_subdirectory(src)
 # turn on with cmake -Dtest=ON
 option(test "Build and run tests" OFF)
 
-if (test)
+if(test)
     # Get and build gtest
     include(ExternalProject)
     set_directory_properties(PROPERTIES EP_PREFIX ${CMAKE_BINARY_DIR}/external)
     ExternalProject_Add(
         googletest
         SVN_REPOSITORY http://googletest.googlecode.com/svn/trunk/
-        SVN_REVISION -r 671
+        SVN_REVISION -r 671 # 1.7.0+
         INSTALL_COMMAND ""
         LOG_DOWNLOAD ON
         LOG_CONFIGURE ON
