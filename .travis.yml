@@ -1,5 +1,10 @@
 language: cpp
-script: "mkdir build && cd build && cmake -Dtest=on .. && make && make test"
+script:
+    - mkdir build
+    - cd build
+    - cmake -DCMAKE_CXX_COMPILER="clang++" -DCMAKE_CXX_FLAGS="-std=c++11 -stdlib=libc++" -Dtest=on ..
+    - make
+    - make test
 compiler:
     - clang
     - gcc
