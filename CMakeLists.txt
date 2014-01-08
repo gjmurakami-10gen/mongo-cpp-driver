@@ -9,7 +9,28 @@ add_subdirectory(src)
 option(test "Build and run tests" OFF)
 
 if (test)
-    add_subdirectory(external)
+    # Get and build gtest
+    include(ExternalProject)
+    set_directory_properties(PROPERTIES EP_PREFIX ${CMAKE_BINARY_DIR}/external)
+    ExternalProject_Add(
+        googletest
+        SVN_REPOSITORY http://googletest.googlecode.com/svn/trunk/
+        SVN_REVISION -r 671
+        INSTALL_COMMAND ""
+        LOG_DOWNLOAD ON
+        LOG_CONFIGURE ON
+        LOG_BUILD ON
+    )
+
+    # Add include dir
+    ExternalProject_Get_Property(googletest source_dir)
+    include_directories(${source_dir}/include)
+
+    # Add library dir
+    ExternalProject_Get_Property(googletest binary_dir)
+    link_directories(${binary_dir})
+
+    # Build the tests
     add_subdirectory(test)
     enable_testing()
     add_test(NAME test_mongo COMMAND test_mongo)

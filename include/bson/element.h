@@ -1,7 +1,14 @@
 #ifndef BSON_ELEMENT_H_
 #define BSON_ELEMENT_H_
 #include <iostream>
+#include <cstring> // for memcopy
 #include <cstdint>
+
+#if defined(__linux__)
+#include <endian.h>
+#elif defined(__APPLE__)
+#include <machine/endian.h>
+#endif
 
 namespace bson {
 

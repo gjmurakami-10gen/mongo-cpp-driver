@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/sample4_unittest.dir/samples/sample4_unittest.cc.o CMakeFiles/sample4_unittest.dir/samples/sample4.cc.o  -o sample4_unittest  -L/Users/tbrock/Code/mongo-cpp-driver/gtest-1.7.0/mybuild/src  libgtest_main.a libgtest.a -Wl,-rpath,/Users/tbrock/Code/mongo-cpp-driver/gtest-1.7.0/mybuild/src 
