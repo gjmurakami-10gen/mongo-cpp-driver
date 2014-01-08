@@ -1,14 +1,8 @@
 #ifndef BSON_ELEMENT_H_
 #define BSON_ELEMENT_H_
 #include <iostream>
-#include <cstring> // for memcopy
 #include <cstdint>
-
-#if defined(__linux__)
-#include <endian.h>
-#elif defined(__APPLE__)
-#include <machine/endian.h>
-#endif
+#include "portable_endian.h"
 
 namespace bson {
 
@@ -21,19 +15,25 @@ namespace bson {
     };
 
     inline void Element::putInt32(std::iostream &io, const int32_t &value) const {
-        io.write(reinterpret_cast<const char *>(&value), sizeof(value));
+        uint32_t little_endian = htole32(value);
+        io.write(reinterpret_cast<const char *>(&little_endian), sizeof(value));
     }
 
     inline void Element::getInt32(std::iostream &io, int32_t &value) {
-        io.read(reinterpret_cast<char *>(&value), sizeof(value));
+        char * bytes = reinterpret_cast<char *>(&value);
+        io.read(bytes, sizeof(value));
+        value = le32toh(value);
     }
 
     inline void Element::putInt64(std::iostream &io, const int64_t &value) const {
-        io.write(reinterpret_cast<const char *>(&value), sizeof(value));
+        uint64_t little_endian = htole32(value);
+        io.write(reinterpret_cast<const char *>(&little_endian), sizeof(value));
     }
 
     inline void Element::getInt64(std::iostream &io, int64_t &value) {
-        io.read(reinterpret_cast<char *>(&value), sizeof(value));
+        char * bytes = reinterpret_cast<char *>(&value);
+        io.read(bytes, sizeof(value));
+        value = le64toh(value);
     }
 
 } // bson namespace

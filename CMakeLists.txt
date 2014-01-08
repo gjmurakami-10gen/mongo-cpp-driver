@@ -33,6 +33,6 @@ if(test)
     # Build the tests
     add_subdirectory(test)
     enable_testing()
-    add_test(NAME test_mongo COMMAND test_mongo)
+    #add_test(NAME test_mongo COMMAND test_mongo)
     add_test(NAME test_bson COMMAND test_bson)
 endif()

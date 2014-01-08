@@ -1,7 +1,6 @@
 #ifndef BSON_NUMBER_INT_H_
 #define BSON_NUMBER_INT_H_
 #include <cstdint>
-//#include <arpa/inet.h>
 #include "element.h"
 
 namespace bson {

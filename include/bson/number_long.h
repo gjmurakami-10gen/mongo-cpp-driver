@@ -17,21 +17,9 @@ namespace bson {
     };
 
     inline NumberLong::NumberLong(std::iostream &io) {
-        char bytes[8];
-        io.read(bytes, 8);
-        value = 
-            bytes[0] |
-            ((int64_t)bytes[1] << 8) |
-            ((int64_t)bytes[2] << 16) |
-            ((int64_t)bytes[3] << 24) |
-            ((int64_t)bytes[4] << 32) |
-            ((int64_t)bytes[5] << 40) |
-            ((int64_t)bytes[6] << 48) |
-            ((int64_t)bytes[7] << 56);
     }
 
     inline void NumberLong::toBson(std::iostream &io) const {
-        //io.write(value, 8);
     }
 
 } // bson namespace
