@@ -12,3 +12,6 @@ cmake -Dtest=ON ..
 make
 make test
 ```
+
+# Run an individual test with gtest output visible - example
+./test/test_bson
