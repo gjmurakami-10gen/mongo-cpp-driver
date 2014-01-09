@@ -14,8 +14,9 @@ if(test)
     set_directory_properties(PROPERTIES EP_PREFIX ${CMAKE_BINARY_DIR}/external)
     ExternalProject_Add(
         googletest
-        SVN_REPOSITORY http://googletest.googlecode.com/svn/trunk/
-        SVN_REVISION -r 671 # 1.7.0+
+        URL http://googletest.googlecode.com/files/gtest-1.7.0.zip
+        #SVN_REPOSITORY http://googletest.googlecode.com/svn/trunk/
+        #SVN_REVISION -r 671 # 1.7.0+
         INSTALL_COMMAND ""
         LOG_DOWNLOAD ON
         LOG_CONFIGURE ON

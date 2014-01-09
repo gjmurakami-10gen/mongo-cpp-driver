@@ -1,2 +1,2 @@
 project(bson)
-add_library(bson number_int.cpp)
+add_library(bson int32.cpp)
